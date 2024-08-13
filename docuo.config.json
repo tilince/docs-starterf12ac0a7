@@ -1,81 +1,129 @@
 {
-  "title": "My site",
-  "description": "Start building modern documentation site in 4 steps - Docuo",
-  "favicon": "image/favicon.png",
+  "title": "UIKit",
+  "favicon": "image/favicon.ico",
   "themeConfig": {
+    "colors": {
+      "primaryLight": "#0055FF",
+      "primaryDark": "#266EFF"
+    },
     "colorMode": {
-      "defaultMode": "dark",
-      "disableSwitch": false
+      "defaultMode": "light",
+      "disableSwitch": false,
+      "respectPrefersColorScheme": false
     },
     "navbar": {
-      "title": "My project",
+      "title": "",
       "logo": {
-        "light": "image/logo_light.png",
-        "dark": "image/logo_dark.png"
+        "dark": "image/logo_zegocloud_dark.png",
+        "light": "image/logo_zegocloud_light.png"
       },
+      "iconRedirectUrl": "https://zegocloud.com",
       "items": [
         {
-          "type": "docSidebar",
-          "sidebarId": "mySidebar",
-          "label": "Documentation"
-        },
+          "type": "default",
+          "label": "Console",
+          "href": "https://console.zegocloud.com/"
+        }
+      ]
+    },
+    "navbar.zh": {
+      "title": "",
+      "logo": {
+        "dark": "image/logo_zego_dark.png",
+        "light": "image/logo_zego_light.png"
+      },
+      "iconRedirectUrl": "https://zego.im",
+      "items": [
         {
           "type": "default",
-          "label": "Homepage",
-          "href": "https://www.spreading.ai"
+          "label": "控制台",
+          "href": "https://console.zego.im/"
         }
       ]
     },
     "footer": {
-      "logo": {
-        "light": "image/logo_light.png",
-        "dark": "image/logo_dark.png"
-      },
-      "caption": "My project",
-      "links": [
-        {
-          "title": "Product",
-          "items": [
-            {
-              "label": "Blog",
-              "href": "https://www.spreading.ai/blog"
-            },
-            {
-              "label": "Sign up",
-              "href": "https://app.spreading.ai/signup"
-            },
-            {
-              "label": "Log in",
-              "href": "https://app.spreading.ai/login"
-            }
-          ]
-        }
-      ],
+      "logo": "",
+      "caption": "",
+      "links": [],
       "socials": [
         {
-          "logo": "Twitter",
-          "href": "https://twitter.com/docuo_team"
-        },
-        {
-          "logo": "LinkedIn",
-          "href": "https://www.linkedin.com/company/spreadingai"
-        },
-        {
           "logo": "Discord",
-          "href": "https://discord.gg/pgJFhUwzAU"
+          "href": "https://discord.gg/EtNRATttyp"
         },
         {
           "logo": "GitHub",
-          "href": "https://github.com/spreadingai"
+          "href": "https://github.com/ZEGOCLOUD"
+        }
+      ]
+    },
+    "footer.zh": {
+      "logo": "",
+      "caption": "",
+      "links": [],
+      "socials": [
+        {
+          "logo": "GitHub",
+          "href": "https://github.com/ZEGOCLOUD"
         }
       ]
     }
   },
   "search": {
     "algolia": {
-      "appId": "YOUR_APP_ID",
-      "apiKey": "YOUR_API_KEY",
-      "indexName": "YOUR_INDEX_NAME"
+      "appId": "N61JOMLMAK",
+      "apiKey": "cc55591748c47b1e5e24d363cdf1d5eb",
+      "indexName": "zegocloud"
+    }
+  },
+  "openapi": {
+    "petstore": {
+      "specPath": "docs/Using OpenAPI/OpenAPI Demo/petstore.yaml",
+      "outputDir": "docs/Using OpenAPI/OpenAPI Demo"
+    }
+  },
+  "instances": [
+    {
+      "id": "in_app_chat_kit_android",
+      "label": "In-app Chat Kit(Android)",
+      "path": "uikit/imkit/docs_in_app_chat_kit_android",
+      "routeBasePath": "in-app-chat-kit-android",
+      "navigationInfo": {
+        "group": {
+          "id": "imkit",
+          "name": "In-app Chat Kit",
+          "tag": "New"
+        },
+        "category": ["Products", "ZEGO UIKits"],
+        "platform": "Android: Java"
+      }
+    },
+    {
+      "id": "in_app_chat_kit_android_zh",
+      "label": "IMKit (Android)",
+      "path": "uikit/imkit/docs_in_app_chat_kit_android_zh",
+      "routeBasePath": "zh/in-app-chat-kit-android",
+      "locale": "zh",
+      "navigationInfo": {
+        "group": {
+          "id": "imkit_zh",
+          "name": "IMKit",
+          "tag": "New"
+        },
+        "category": ["Products", "ZEGO UIKits"],
+        "platform": "Android: Java"
+      }
+    }
+  ],
+  "analytics": {
+    "ga4": {
+      "measurementId": "G-PKWFYY4JH2"
+    }
+  },
+  "i18n": {
+    "defaultLocale": "en",
+    "localeConfigs": {
+      "en": "English",
+      "zh": "中文"
     }
   }
 }
