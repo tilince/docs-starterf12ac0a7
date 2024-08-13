@@ -4,7 +4,7 @@
 
 ## 本地预览
 
-安装 Docuo CLI.
+安装 Docuo CLI..
 
 ```
 npm i -g @spreading/docuo
@@ -17,11 +17,13 @@ docuo dev
 ```
 
 一般情况下，在运行一次 `docuo dev`后，文档网站会在本地缓存一份数据。缓存过后可以执行以下命令加快每次启动时间。
+
 ```
 docuo dev --noinstall
 ```
 
 如果本地遇到了问题或者文档系统有更新，请运行以下命令：
+
 ```bash
 docuo clear & docuo dev
 ```
@@ -31,4 +33,3 @@ docuo clear & docuo dev
 登录以下网址触发重新爬取数据。
 
 https://crawler.algolia.com/
-
