@@ -4,7 +4,7 @@
 
 ## 本地预览
 
-安装 Docuo CLI.....
+安装 Docuo CLI......
 
 ```
 npm i -g @spreading/docuo
